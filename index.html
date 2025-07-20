@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safestart Driving School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+            
+        }
+        
+        .header-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+        }
+        
+        .price-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .price-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .highlight-badge {
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            z-index: 10;
+        }
+        .contact{
+            margin: 2rem;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="max-w-8xl w-full bg-white rounded-xl shadow-xl overflow-hidden">
+        <!-- Header Section -->
+        <div class="header-gradient text-white p-8 text-center relative">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/32c62038-7d49-4fdc-953b-5ad3b0b8970f.png" alt="Professional driving instructor teaching student in modern car with city skyline in background" class="w-full h-full object-cover absolute inset-0 opacity-20">
+            <div class="relative z-10">
+                <h1 class="text-4xl font-bold mb-2">SAFESTART DRIVING SCHOOL</h1>
+                <p class="text-xl font-semibold">Your Journey to Safe Driving Starts Here</p>
+                <div class="mt-6 flex justify-center space-x-4">
+                    <div class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full flex items-center">
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        <span>0705 332 938 / 0725 280 553</span>
+                    </div>
+                    <div class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full flex items-center">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>Zimmerman</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="p-8">
+            <!-- Services Section -->
+            <div class="grid md:grid-cols-3 lg:grid-cols-2 gap-10 mb-8">
+                <!-- Saloon Cars -->
+                <div class="price-card bg-white border border-gray-100 rounded-lg p-6 relative shadow-sm">
+                    <div class="highlight-badge bg-yellow-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        POPULAR
+                    </div>
+                    <div class="flex flex-col items-center mb-4">
+                        <a href="#">
+                            <figure>
+                                <img src="assets/image1.jpg" alt="Modern silver saloon car parked at driving school with instructor and student" class="w-full h-52 object-cover rounded">
+                                <figcaption class="text-sm text-gray-600 mt-2">Includes NTSA charges including: PDL, test booking and assessment inclusive</figcaption>
+                            </figure>
+                        </a>
+                        <p class="text-sm text-gray-600 mt-2">(Auto & Manual)</p>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">Saloon Cars</h3>
+                    <div class="text-center mb-4">
+                        <span class="text-2xl font-bold text-blue-600">Ksh 13,000/13,500</span>
+                        <p class="text-sm text-gray-600">(Auto & Manual)</p>
+                    </div>
+                      <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Includes NTSA charges (Ksh 2,700)
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Assessment & PDL included
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Test fee covered
+                        </li>
+                    </ul>
+                   
+                </div>
+                
+                <!-- Bikes Training -->
+                <div class="price-card bg-white border border-gray-100 rounded-lg p-6 relative shadow-sm">
+                    <div class="flex flex-col items-center mb-4">
+                        <a href="#">
+                            <figure>
+                                <img src="assets/bikebike.png" alt="Motorcycle training session with safety gear on paved practice area" class="w-full h-45 object-cover rounded">
+                                <figcaption class="text-sm text-gray-600 mt-2">Includes NTSA charges including: PDL, test booking and assessment inclusive</figcaption>
+                            </figure>
+                        </a>
+                        <p class="text-sm text-gray-600 mt-2">All inclusive</p>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">Bikes Training</h3>
+                    <div class="text-center mb-4">
+                        <span class="text-2xl font-bold text-blue-600">Ksh 8,000</span>
+                        <p class="text-sm text-gray-600">All inclusive</p>
+                    </div>
+                    
+                </div>
+                
+                <!-- A3 (Boda/TukTuk) -->
+                <div class="price-card bg-white border border-gray-100 rounded-lg p-6 relative shadow-sm">
+                    <div class="flex flex-col items-center mb-4">
+                        <a href="#">
+                            <figure>
+                                <img src="assets/tuktuk.png" alt="Motorcycle and tuktuk training session at driving school" class="w-full h-58 object-cover rounded">
+                                <figcaption class="text-sm text-gray-600 mt-2">Includes NTSA charges including: PDL, test booking and assessment inclusive</figcaption>
+                            </figure>
+                        </a>
+                        <p class="text-sm text-gray-600 mt-2">All inclusive</p>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">A3 (Boda/TukTuk)</h3>
+                    <div class="text-center mb-4">
+                        <span class="text-2xl font-bold text-blue-600">Ksh 8,000</span>
+                        <p class="text-sm text-gray-600">All inclusive</p>
+                    </div>
+                    
+                </div>
+                
+                <!-- Lorry Training -->
+                <div class="price-card bg-white border border-gray-100 rounded-lg p-6 relative shadow-sm">
+                    <div class="flex flex-col items-center mb-4">
+                        <a href="#">
+                            <figure>
+                                <img src="assets/lorry.png" alt="Heavy commercial lorry with instructor during training session at driving school" class="w-full h-58 object-cover rounded">
+                                <figcaption class="text-sm text-gray-600 mt-2">Includes NTSA charges including: PDL, test booking and assessment inclusive</figcaption>
+                            </figure>
+                        </a>
+                        <p class="text-sm text-gray-600 mt-2">License Classes: C1 & C</p>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">Lorry Training</h3>
+                    <div class="text-center mb-4">
+                        <span class="text-2xl font-bold text-blue-600">Ksh 10,000</span>
+                        <p class="text-sm text-gray-600">License Classes: C1 & C</p>
+                    </div>
+                </div>
+               
+            </div>
+            
+            <!-- Endorsements Section -->
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <!-- B3 Professional -->
+                <div class="price-card bg-white border border-gray-100 rounded-lg p-6 relative shadow-sm">
+                    <div class="flex flex-col items-center mb-4">
+                        <a href="#">
+                            <figure>
+                                <img src="assets/professionall.jpg" alt="Professional truck driver training course" class="w-full h-41 object-cover rounded">
+                                <figcaption class="text-sm text-gray-600 mt-2">Includes NTSA charges including: PDL, test booking and assessment inclusive</figcaption>
+                            </figure>
+                        </a>
+                        <p class="text-sm text-gray-600 mt-2">Professional training</p>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">B3 Professional</h3>
+                    <div class="text-center mb-4">
+                        <span class="text-2xl font-bold text-blue-600">Ksh 10,000</span>
+                    </div>
+                  
+                </div>
+                
+                <!-- PSV D1 -->
+                <div class="price-card bg-white border border-gray-100 rounded-lg p-6 relative shadow-sm">
+                    <div class="flex flex-col items-center mb-4">
+                        <a href="#">
+                            <figure>
+                                <img src="assets/matatu.png" alt="Public service vehicle driver training" class="w-full h-58 object-cover rounded">
+                                <figcaption class="text-sm text-gray-600 mt-2">Includes NTSA charges including: PDL, test booking and assessment inclusive</figcaption>
+                            </figure>
+                        </a>
+                        <p class="text-sm text-gray-600 mt-2">Public Service Vehicle</p>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">PSV Training D1</h3>
+                    <div class="text-center mb-4">
+                        <span class="text-2xl font-bold text-blue-600">Ksh 10,000</span>
+                    </div>
+                     
+                </div>
+                
+                <!-- PSV D2/D3 -->
+                <div class="price-card bg-white border border-gray-100 rounded-lg p-6 relative shadow-sm">
+                    <div class="flex flex-col items-center mb-4">
+                        <a href="#">
+                            <figure>
+                                <img src="assets/bus.png" alt="Advanced public service vehicle training" class="w-full h-58 object-cover rounded">
+                                <figcaption class="text-sm text-gray-600 mt-2">Includes NTSA charges including: PDL, test booking and assessment inclusive</figcaption>
+                            </figure>
+                        </a>
+                        <p class="text-sm text-gray-600 mt-2">Public Service Vehicle</p>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">PSV Training D2/D3</h3>
+                    <div class="text-center mb-4">
+                        <span class="text-2xl font-bold text-blue-600">Ksh 10,000</span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="flex flex-col items-center text-center mb-2">
+                 <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Includes NTSA charges (Ksh 2,700)
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Assessment & PDL included
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            Test fee covered
+                        </li>
+                    </ul>
+            </div>          
+                    
+          <!-- Features Section -->
+            <div class="bg-blue-50 rounded-2xl p-8 shadow-md mb-10">
+            <h2 class="text-2xl font-extrabold text-center text-blue-800 mb-6 tracking-tight">
+                WHY CHOOSE US?
+            </h2>
+            <div class="grid gap-6 md:grid-cols-3">
+                
+                <!-- Feature Item -->
+                <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow hover:shadow-lg transition-all duration-300 ease-in-out">
+                <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-3">
+                    <i class="fas fa-certificate text-blue-600 text-2xl"></i>
+                </div>
+                <h4 class="text-lg font-semibold mb-1 text-gray-800">Certified Instructors</h4>
+                <p class="text-sm text-gray-600">NTSA-approved professionals</p>
+                </div>
+
+                <!-- Feature Item -->
+                <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow hover:shadow-lg transition-all duration-300 ease-in-out">
+                <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-3">
+                    <i class="fas fa-car-side text-blue-600 text-2xl"></i>
+                </div>
+                <h4 class="text-lg font-semibold mb-1 text-gray-800">Modern Fleet</h4>
+                <p class="text-sm text-gray-600">Well-maintained vehicles</p>
+                </div>
+
+                <!-- Feature Item -->
+                <div class="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow hover:shadow-lg transition-all duration-300 ease-in-out">
+                <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-3">
+                    <i class="fas fa-calendar-check text-blue-600 text-2xl"></i>
+                </div>
+                <h4 class="text-lg font-semibold mb-1 text-gray-800">Flexible Schedule</h4>
+                <p class="text-sm text-gray-600">Weekdays & weekends available</p>
+                </div>
+
+            </div>
+            </div>
+
+            <!-- Location and Contact -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-map-marker-alt text-red-500 mr-2"></i>
+                        <span>Our Location</span>
+                    </h3>
+                    <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                        <img src="assets/location.PNG"alt="Map view of Zimmerman area showing location of driving school opposite Powerstar" class="w-full h-25 object-cover">
+                        <div class="p-4">
+                            <p class="font-medium text-gray-800">Zimmerman, Canopy</p>
+                            <p class="text-sm text-gray-600">Opposite Powerstar</p>
+                            <p class="text-sm text-gray-600 mt-2 flex items-center">
+                                <i class="fas fa-clock mr-2"></i> Mon-fri: 7:00 AM - 7:00 PM
+                            </p>
+                             <p class="text-sm text-gray-600 mt-2 flex items-center">
+                                <i class="fas fa-clock mr-2"></i> saturday: 8:00 AM - 4:00 PM
+                            </p>
+                             <p class="text-sm text-gray-600 mt-2 flex items-center">
+                                <i class="fas fa-clock mr-2"></i> sunday: 2:00 PM - 5:00 PM
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact" class="grid grid-cols-1 grid-rows-3 gap-2"> <!-- reduced gap -->
+                    <h3 class="text-xl font-bold mb-2 flex items-center"> <!-- reduced from mb-4 to mb-2 -->
+                        <i class="fas fa-phone-alt text-green-500 mr-2"></i>
+                        <span>Contact Us</span>
+                    </h3>
+                    <div class="pt-0"> <!-- removed p-1 to avoid extra padding -->
+                        <p><i class="fas fa-map-marker-alt mr-2"></i><span>Zimmerman</span></p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i><span>Githurai</span></p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i><span>Kahawa West</span></p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i><span>Membley</span></p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i><span>Bypass</span></p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i><span>Kahawa West</span></p>
+                    </div>
+        <div class="bg-white border border-gray-200 rounded-lg p-4">
+            <div class="space-y-1">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-phone text-blue-600"></i>
+                    </div>
+                    <div class="ml-3">
+                        <p class="font-medium">Call us at:</p>
+                        <a href="tel:0705332938" class="text-blue-600 hover:underline">0705 332 938</a>
+                        <a href="tel:0725280553" class="text-blue-600 hover:underline block mt-1">0725 280 553</a>
+                    </div>
+                </div>
+
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-envelope text-blue-600"></i>
+                    </div>
+                    <div class="ml-3">
+                        <p class="font-medium">Email us:</p>
+                        <a href="mailto:safestart@gmail.com" class="text-blue-600 hover:underline">safestart@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="pt-4">
+                    <h4 class="font-bold mb-2">Follow Us:</h4>
+                    <div class="flex space-x-3">
+                        <a href="https://www.tiktok.com/@safestartdriving" target="_blank" class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.facebook.com/people/Safe-Start-Driving-School/61557625671410/" class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-pink-600 text-white rounded-full flex items-center justify-center">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-blue-400 text-white rounded-full flex items-center justify-center">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <!-- Footer Section -->
+        <div class="bg-gray-800 text-white p-4 text-center text-sm">
+            <p>© 2023 safestart Driving School. All Rights Reserved.</p>
+        </div>
+    </div>
+    
+    <script>
+        // Simple animation for cards on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.price-card');
+            
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.classList.add('animate__animated', 'animate__fadeInUp');
+                }, 100 * index);
+            });
+        });
+    </script>
+</body>
+</html>
+
+                    
+                    
